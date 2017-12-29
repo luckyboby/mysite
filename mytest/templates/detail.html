@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+{%for questions in question%}
+<h3><a href="{% url 'detail_04' questions.id %}">{{ questions.question_text }}</a></h3>
+
+{%endfor%}
+</body>
+</html>
